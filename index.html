@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>F-Squad</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F-Squad | Official Site</title>
 
-  <!-- Google Font -->
+  <!-- FAVICON -->
+  <link rel="icon" type="image/jpeg" href="C:\Users\kaku2\OneDrive\my coding for vs code\channels4_profile (1).jpg">
+
+  <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -28,16 +31,16 @@
       text-decoration: none;
     }
 
-    /* HERO SECTION */
+    /* HERO */
     .hero {
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      background: radial-gradient(circle at top, #1a1a1a, #000);
       flex-direction: column;
       padding: 0 20px;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
     }
 
     .hero h1 {
@@ -48,26 +51,32 @@
     }
 
     .hero span {
-      color: #7f5cff; /* neon purple */
+      color: #7714b9;
     }
 
     .hero p {
       margin-top: 20px;
       color: #aaa;
-      font-size: 1.2rem;
-      line-height: 1.5;
+      font-size: 1.15rem;
+      line-height: 1.6;
+    }
+
+    .hero p a {
+      color: #888;
+      font-size: 0.95rem;
+    }
+
+    .hero p a:hover {
+      color: #7f5cff;
     }
 
     .hero-btn {
       display: inline-block;
       margin-top: 40px;
       padding: 14px 36px;
-      background: transparent;
       border: 2px solid #7f5cff;
       color: #7f5cff;
       font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
       transition: all 0.3s ease;
       border-radius: 6px;
     }
@@ -89,6 +98,7 @@
       font-size: 3rem;
       margin-bottom: 40px;
       letter-spacing: 2px;
+      text-align: center;
     }
 
     /* TEAM GRID */
@@ -104,6 +114,7 @@
       border-radius: 14px;
       text-align: center;
       transition: all 0.3s ease;
+      border: 1px solid #1e1e1e;
     }
 
     .card:hover {
@@ -133,6 +144,14 @@
       padding: 30px;
       color: #666;
       background: #050505;
+      margin-top: 80px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 3.5rem;
+      }
     }
   </style>
 </head>
@@ -140,33 +159,41 @@
 
   <!-- HERO -->
   <section class="hero">
-    <h1>Team <span>F-Squad</span></h1>
-    <p><a href="https://teampwr.gg" target="_blank">Inspired by PWR</a></p>
-    <a href="careers.html" class="hero-btn">Join F-Squad</a>
+    <h1>TEAM <span>F-SQUAD</span></h1>
+    <p>
+      Family-friendly gaming, content, and community<br>
+      <a href="https://teampwr.gg" target="_blank">Inspired by PWR</a>
+    </p>
+
+    <a href="careers.html" class="hero-btn">JOIN F-SQUAD</a>
   </section>
 
-  <!-- TEAM -->
+  <!-- CREATORS -->
   <section class="section">
     <h2>CREATORS</h2>
+
     <div class="team">
       <div class="card">
-        <img src="https://yt3.googleusercontent.com/MzUSEZ1zFcYd9KftQP-ovau8tJJI0B8f0jfg19G_lPGcGL3bGiwtV0y66eWGES44e1WndLNX=s160-c-k-c0x00ffffff-no-rj" alt="Image">
+        <img src="https://yt3.googleusercontent.com/MzUSEZ1zFcYd9KftQP-ovau8tJJI0B8f0jfg19G_lPGcGL3bGiwtV0y66eWGES44e1WndLNX=s160-c-k-c0x00ffffff-no-rj" alt="Frezone Gamer">
         <h3>Frezone Gamer</h3>
         <p>Owner</p>
       </div>
+
       <div class="card">
-        <img src="https://yt3.googleusercontent.com/gYAGZ0RmTkHBZsNtgpplmU0UENRzIM8ddFVPGDi9y7y3cqJEGr3CZcM7BwE4GfefgZYkl3hkCw=s160-c-k-c0x00ffffff-no-rj" alt="Image">
+        <img src="https://yt3.googleusercontent.com/gYAGZ0RmTkHBZsNtgpplmU0UENRzIM8ddFVPGDi9y7y3cqJEGr3CZcM7BwE4GfefgZYkl3hkCw=s160-c-k-c0x00ffffff-no-rj" alt="Ethan Shuell">
         <h3>Ethan Shuell</h3>
-        <p>Co Owner</p>
+        <p>Co-Owner</p>
       </div>
+
       <div class="card">
-        <img src="https://yt3.googleusercontent.com/AXITNWFjC7bTHvlX88N5gchzwq2I75yvUfGPAPGYgt5svghnMNtU9A0jztKtdIR_UtkNcr_G=s160-c-k-c0x00ffffff-no-rj" alt="Image">
+        <img src="https://yt3.googleusercontent.com/AXITNWFjC7bTHvlX88N5gchzwq2I75yvUfGPAPGYgt5svghnMNtU9A0jztKtdIR_UtkNcr_G=s160-c-k-c0x00ffffff-no-rj" alt="Basketball Pro">
         <h3>Basketball Pro</h3>
         <p>Content Creator</p>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     © 2026 F-Squad — All Rights Not Owned
   </footer>
